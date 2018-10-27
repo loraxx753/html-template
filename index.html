@@ -9,17 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/theme.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script type="module" src="main.js"></script>
 </head>
 
 <body>
     <h1>HTML Template</h1>
-    <custom-content>This is custom content</custom-content>
-    <custom-content><a is="">Custom elements</a> don't need to be defined.</custom-content>
-    <custom-content code>But, they do need to have a dash in the name. <code>&lt;example-component&gt;</code> will work
+    <custom-content>This is custom content.</custom-content>
+    <custom-content><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements">Custom Elements</a>
+        don't need anything imported , just used. This seems to work in IE11 as well.</custom-content>
+    <custom-content block>But, they do need to have a dash in the name. <code>&lt;example-component&gt;</code> will
+        work
         but
         <code>&lt;component&gt;</code>
         won't.</custom-content>
     <broken>Or else their type is "<code>HTMLUnknownElement".</code></broken>
+    <custom-content success block>Works in IE11 natively (so far)!</custom-content>
 </body>
 
 </html>

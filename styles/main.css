@@ -1,14 +1,17 @@
-custom-content[code] {
+
+
+*[block] {
     display: block;
-    padding-top: 10vh;
+    margin: 5vh 0;
 }
 
-custom-content {
-    color: red;
+*[success] {
+    /* Fallback because IE11 doesn't like CSS variables without a polyfill. */
+    color: var(--color-green);
+    color: #2ECC40;
 }
 
 broken {
-    color: var(--color-red);
     margin: 3vh 0 0 3vw;
     display: block;
     font-size: 10pt;
