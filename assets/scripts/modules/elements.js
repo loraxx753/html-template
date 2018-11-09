@@ -4,8 +4,9 @@ export const th = document.createElement('th');
 export class StockSummary extends HTMLElement {
     constructor() {
         super();
+        console.log("am I alive?")
     }
-    onConnectedCallback() {
+    observedAttributes() {
         const day = JSON.parse(this.getAttribute(day))
         this.innerHTML = JSON.stringify(day)
     }
