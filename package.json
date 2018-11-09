@@ -7,7 +7,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "serve": "http-server",
+    "start": "http-server",
+    "publish": "surge",
+    "ls:published": "surge list",
+    "teardown": "surge teardown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +25,8 @@
   },
   "homepage": "https://github.com/loraxx753/html-template#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
-  }
+    "http-server": "^0.11.1",
+    "surge": "^0.20.1"
+  },
+  "dependencies": {}
 }
