@@ -19,7 +19,7 @@ export default (async function () {
     if (e.key === 'Enter') console.log(getAnotherDay.next().value.date)
   })
   
-  document.addEventListener('tap', (e) => {
+  document.addEventListener('', (e) => {
     getAnotherDay.next()
   })
 
