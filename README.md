@@ -17,7 +17,7 @@ Hey [allygator](https://allygator.me/), sorry I responded with basically just a 
 * ES6, ES7, generators, iterators, async/await... you get the idea.
 * .documentation.md files can be found in folders I thought would be nice to have one.
     *  Follow the white rabbit of imports starting with [index.html](https://github.com/loraxx753/html-template/blob/master/index.html)'s [script](https://github.com/loraxx753/html-template/blob/master/script.js) and [link](https://github.com/loraxx753/html-template/blob/master/style.css) tags as the two starting points. 
-* Only two packages, both of which are `--save-dev`, are needed. These can also be installed globally, removing the need for either `package.json` or `node_modules`.
+* Only two packages, both of which are `--save-dev` only. Alternatively, they can be installed globally, removing the need for either `package.json` or a `node_modules` folder.
 * `npm run start` uses the [http-server](https://www.npmjs.com/package/http-server) package to start a development (aka local) server. 
     * The link will probably be http://localhost.com:8080 unless you know what you're doing and want to change it.
 * The following three commands use [surge.sh](https://surge.sh). A [free](https://surge.sh/help/why-is-surge-free) [cdn](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) for [Progressive](https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive/Advantages) [web](https://developers.google.com/web/progressive-web-apps/) [apps](https://developers.google.com/web/fundamentals/).
