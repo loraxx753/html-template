@@ -20,7 +20,7 @@ export default (async function () {
   })
   
   document.addEventListener('tap', (e) => {
-    getAnotherDay().next()
+    getAnotherDay.next()
   })
 
 })()
