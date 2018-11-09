@@ -18,6 +18,10 @@ export default (async function () {
   document.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') console.log(getAnotherDay.next().value.date)
   })
+  
+  document.addEventListener('tap', (e) => {
+    getAnotherDay().next()
+  })
 
 })()
 
