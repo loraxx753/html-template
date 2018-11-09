@@ -2,7 +2,7 @@
 
 ##  What is Stock Stalk
 
-Stock Stalk is an implimentation of the "To-Do List Example" minimum proposed by by @zachberry. It's a Stock Watcher / Nueral Network Stock Predictor using [IEXTrading's Api](https://api.iextrading.com/) and [brain.js](https://github.com/BrainJS) to make an open source Market Speculator.
+Stock Stalk is an implimentation of the "To-Do List Example" minimum proposed by by [@zachberry](https://github.com/zachberry). It's a Stock Watcher / Nueral Network Stock Predictor using [IEXTrading's Api](https://api.iextrading.com/) and [brain.js](https://github.com/BrainJS) to make an open source Market Speculator.
 
 
 ![I accept you're challenge. Bravo for actually reading the alt text.](https://media.giphy.com/media/jNWig8QMg4jsc/giphy.gif).
@@ -33,4 +33,4 @@ Stock Stalk is an implimentation of the "To-Do List Example" minimum proposed by
 
 ## Where's your Medium Article?
 
-It's coming soon, @zachberry, jesus. 
+It's coming soon, [@zachberry](https://github.com/zachberry), jesus. 
