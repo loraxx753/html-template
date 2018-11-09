@@ -37,6 +37,6 @@ Hey [allygator](https://allygator.me/), sorry I responded with basically just a 
 
 It's coming soon, [Zachary](https://github.com/zachberry).
 
-Do you hear me, [Zachary](https://github.com/zachberry)? It's coming, okay?
+Do you hear me, _[Zachary](https://github.com/zachberry)_? It's coming, okay?
 
 
