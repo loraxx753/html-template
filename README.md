@@ -1,4 +1,4 @@
-# Stock Stalk Example and HTML Template
+# Stock Stalk Example and Progressive Web App Template
 
 ##  What is Stock Stalk
 
