@@ -4,26 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title2</title>
+    <title>Stock Stalk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/theme.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <script type="module" src="main.js"></script>
+    <script nomodule src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script> 
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://cdn.rawgit.com/BrainJS/brain.js/master/browser.js"></script>
 </head>
 
 <body>
-    <h1>HTML Template</h1>
-    <custom-content>This is custom content.</custom-content>
-    <custom-content><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements">Custom Elements</a>
-        don't need anything imported , just used. This seems to work in IE11 as well.</custom-content>
-    <custom-content block>But, they do need to have a dash in the name. <code>&lt;example-component&gt;</code> will
-        work
-        but
-        <code>&lt;component&gt;</code>
-        won't.</custom-content>
-    <broken>Or else their type is "<code>HTMLUnknownElement".</code></broken>
-    <custom-content success block>Works in IE11 natively (so far)!</custom-content>
+    <h1>Stock Stalk</h1>
+    <h2><stock-symbol contenteditable="false">APPL</stock-symbol></h2>
+    <stock-summary></stock-summary>
+    <table id="stock-table" is="stock-table" hide></table>
+    <script src="script.js" defer async></script>
+    
 </body>
 
 </html>
