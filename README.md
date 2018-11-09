@@ -17,7 +17,7 @@ Stock Stalk is an implimentation of the "To-Do List Example" minimum proposed by
 * Only two packages total (both of which are `--save-dev`). These can both be installed globally and  package.json/node_modules could be removed.
 * `npm run start` uses the [http-server]() package to start a development (aka local) server. 
     * The link will probably be http://localhost.com:8080 unless you know what you're doing and want to change it.
-* The following three commands use [surge.sh](https:/ "Surge.sh Homepage"). A free cdn hosting service for static webpages.
+* The following three commands use [surge.sh](https://surge.sh). A free cdn hosting service for static webpages.
     * `npm run publish` gives you an instant one off (free) url
     * `npm run published:list` lists all deployed urls
     * `npm run teardown {url from published:list}` removes a published url 
