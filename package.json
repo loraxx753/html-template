@@ -9,8 +9,8 @@
   "scripts": {
     "start": "http-server",
     "publish": "surge",
-    "ls:published": "surge list",
-    "teardown": "surge teardown",
+    "published:list": "surge list",
+    "destroy": "surge teardown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
