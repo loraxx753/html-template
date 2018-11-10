@@ -16,13 +16,10 @@ export default (async function () {
   document.querySelector('#stock-table').appendChild(header)
 
   document.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') console.log(getAnotherDay.next().value.date)
+    if (e.key === 'Enter') {
+      console.log(getAnotherDay.next().value.date)
+    }
   })
-  
-  document.addEventListener('', (e) => {
-    getAnotherDay.next()
-  })
-
 })()
 
 const createHeader = (keys) => {
