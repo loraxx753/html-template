@@ -32,6 +32,7 @@ Hey [allygator](https://allygator.me/), sorry I responded with basically just a 
 * Stand-Alone Babel Support for IE11
 * CSS Houdini support using a polyfill
 * Generalizing the principals in the documentation so everytihng is more template and cookie-cutter.
+* ES8 features. Some of these may already be implemented, though. I haven't really been paying attention.
 
 ## Where's your Medium Article?
 
