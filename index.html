@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Stock Stalk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script nomodule src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script> 
+    
+    
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
@@ -16,8 +17,17 @@
     <p>Press enter to add a day's stock information to the table. </p>
     <stock-summary></stock-summary>
     <table id="stock-table" is="stock-table"></table>
-    <script src="script.js" defer async></script>
-    
+
+    <script>
+    (function () {
+        const needsBabel = !('serviceWorker' in navigator)
+        const script = document.createElement('script')
+        script.setAttribute('src', 'script.js')
+        script.setAttribute('defer', true)
+        script.setAttribute('async', true)
+        document.querySelector('head').appendChild(script)
+    })()
+    </script>
 </body>
 
 </html>
