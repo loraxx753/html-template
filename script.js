@@ -27,14 +27,6 @@ function addScript(src, callback, options) {
         cssVars();
     });
     addScript(polyfills.css.grid)
-    // addScript(polyfills.js["babel-polyfill"])
-    // addScript(polyfills.js["regenrator-runtime"], function() {
-    //   console.log("polyfills added like a boss!")
-    //   addScript('assets/ie/main.js', function() {
-    //     console.log("legacy main script")
-    //   })
-  
-    // })
   } else { // this is a modern browser
     addScript('assets/scripts/init.js', function() {
     }, { type: "module" })
