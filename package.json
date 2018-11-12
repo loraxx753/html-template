@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "http-server",
+    "legacy": "npx babel assets/scripts --watch --out-dir assets/ie --presets=@babel/preset-env",
     "publish": "surge",
     "published:list": "surge list",
     "destroy": "surge teardown",
@@ -25,8 +26,40 @@
   },
   "homepage": "https://github.com/loraxx753/html-template#readme",
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-regenerator": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-plugin-transform-dynamic-import": "^2.1.0",
     "http-server": "^0.11.1",
     "surge": "^0.20.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "babel": {
+    "plugins": [
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-transform-regenerator"
+    ],
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+            "targets": {
+              "chrome": "58",
+              "ie": "11"
+            }
+          }
+      ]
+    ]  
+  }
 }
