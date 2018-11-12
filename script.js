@@ -18,10 +18,6 @@ function addScript(src, callback, options) {
       "variables": "https://unpkg.com/css-vars-ponyfill@1",
       "grid": "https://rawgit.com/FremyCompany/css-grid-polyfill/master/bin/css-polyfills.js"
     },
-    // "js": {
-    //   "babel-polyfill": "https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.0.0/polyfill.min.js",
-    //   "regenrator-runtime": "https://cdn.jsdelivr.net/npm/regenerator-runtime@0.12.1/runtime.js"
-    // }
   }
 
   const thisIsALegacyBrowser = !('serviceWorker' in navigator);
