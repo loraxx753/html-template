@@ -22,13 +22,23 @@ function addScript(src, callback, options) {
 
   const thisIsALegacyBrowser = !('serviceWorker' in navigator);
   
+  window.browser = window.browser || {}
+  window.browser.legacy = !!thisIsALegacyBrowser
+
   if (thisIsALegacyBrowser) {
     addScript(polyfills.css.variables, function() {
         cssVars();
     });
     addScript(polyfills.css.grid)
+    addScript('https://unpkg.com/@webcomponents/custom-elements', function() {
+      addScript('https://cdn.jsdelivr.net/npm/regenerator-runtime@0.12.1/runtime.js', function() {
+        addScript('assets/scripts/legacy.js', function() {
+          addScript('dist/main.js')
+        })
+      })        
+    })
   } else { // this is a modern browser
-    addScript('assets/scripts/init.js', function() {
+    addScript('assets/scripts/main.js', function() {
     }, { type: "module" })
   }
 })()

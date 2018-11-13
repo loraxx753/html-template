@@ -1,4 +1,1 @@
-(async () => {
-    await import('./main.js')
-})()
-  
+import './main.js'
