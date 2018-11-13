@@ -3,7 +3,7 @@ require('@babel/polyfill')
 
 module.exports = {
     mode: "development",
-    entry: ['@babel/polyfill', "./assets/scripts/main.js" ],
+    entry: ['@babel/polyfill', "./assets/scripts/legacy.js" ],
     output: {
         path: path.resolve(__dirname, "assets/scripts/legacy"), 
         filename: 'main.js'
