@@ -24,14 +24,15 @@ Hey [allygator](https://allygator.me/), sorry I responded with basically just a 
     * `npm run publish` gives you an instant one off (free) url
     * `npm run published:list` lists all deployed urls
     * `npm run teardown {url from published:list}` removes a published url 
-* They can even do [custom urls]()
-    * [protected urls](), too.
+* They can even do [custom urls](https://surge.sh/help/adding-a-custom-domain)
+    * [protected urls](https://surge.sh/help/adding-password-protection-to-a-project), too (for a price).
 
 ## Coming Soon
 
 * Stand-Alone Babel Support for IE11
 * CSS Houdini support using a polyfill
 * Generalizing the principals in the documentation so everytihng is more template and cookie-cutter.
+* ES8 features. Some of these may already be implemented, though. I haven't really been paying attention.
 
 ## Where's your Medium Article?
 
